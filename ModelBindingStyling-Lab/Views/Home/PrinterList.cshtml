@@ -24,12 +24,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.PrinterImage)
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+        
             <td>
                 @Html.DisplayFor(modelItem => item.SKU)
             </td>
@@ -42,10 +42,12 @@
             <td>
                 @Html.DisplayFor(modelItem => item.BuildVolume)
             </td>
+
             <td>
-                @Html.DisplayFor(modelItem => item.PrinterImage)
-            </td>
+                <img width="150" height="150" src="@Html.DisplayFor(modelItem => item.PrinterImage)" class="img-fluid"><img />
+            </td>      
+            
         </tr>
-}
+}                      
     </tbody>
 </table>

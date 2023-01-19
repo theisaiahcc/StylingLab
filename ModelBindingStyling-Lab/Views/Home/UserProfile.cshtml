@@ -4,48 +4,76 @@
     ViewData["Title"] = "J. Doe profile page";
 }
 
-<h1>Profile Page</h1>
-
-<div>
-    <h4>UserProfile</h4>
+<div class="bg-secondary">
+    <div class="bg-secondary">
+    <h3>
+    Profile Page
+    <small class="text-muted">User profile</small>
+    </div>
+    </h3>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserProfileId)
+    <dl class="row ">
+        <dt class="col-sm-2">
+            <div class="bg-info">
+                @Html.DisplayNameFor(model => model.UserProfileId)
+            </div>
         </dt>
         <dd class = "col-sm-10">
-            @Model.UserProfileId
+            <div class="bg-info">
+                @Model.UserProfileId
+            </div>
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FullName)
+            <div class="bg-secondary">
+                @Html.DisplayNameFor(model => model.FullName)
+            </div>
         </dt>
         <dd class = "col-sm-10">
-            @Model.FullName
+            <div class="bg-secondary">
+                @Model.FullName
+            </div>
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
+            <div class="bg-info">
+                @Html.DisplayNameFor(model => model.Email)
+            </div>
         </dt>
         <dd class = "col-sm-10">
-            @Model.Email
+            <div class="bg-info">
+                @Model.Email
+            </div>
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhoneNumber)
+            <div class="bg-secondary">
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </div>
         </dt>
         <dd class = "col-sm-10">
-            @Model.PhoneNumber
+            <div class="bg-secondary">
+                @Model.PhoneNumber
+            </div>
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImageUrl)
+            <div class="bg-info">
+                @Html.DisplayNameFor(model => model.ImageUrl)
+            </div>
         </dt>
         <dd class = "col-sm-10">
-            @Model.ImageUrl
+            <div class="bg-info">
+                @Model.ImageUrl
+            </div>
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.GitHubUrl)
+            <div class="bg-secondary">
+                @Html.DisplayNameFor(model => model.GitHubUrl)
+            </div>
         </dt>
         <dd class = "col-sm-10">
-            @Model.GitHubUrl
+            <div class="bg-secondary">
+                @Model.GitHubUrl
+            </div>
         </dd>
+        <div class="bg-info">
         <dt>Skilled Languages</dt>
         <dd>
             <ul>
@@ -55,5 +83,6 @@
                 }
             </ul>
         </dd>
+        </div>
     </dl>
 </div>
